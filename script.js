@@ -11,7 +11,11 @@ const calcular = () => {
         divResultado.textContent = `Olá ${nome}, seu IMC é de: ${resultado} e você se enquadra em: Peso Normal`;
     } else if (resultado > 25 && resultado < 29.99) {
         divResultado.textContent = `Olá ${nome}, seu IMC é de: ${resultado} e você se enquadra em: Sobrepeso`;
-    } else if(resultado > 30){
-        divResultado.textContent = `Olá ${nome}, seu IMC é de: ${resultado} e você se enquadra em: Obesidade`;
+    } else if(resultado > 30 && resultado < 34.99){
+        divResultado.textContent = `Olá ${nome}, seu IMC é de: ${resultado} e você se enquadra em: Obesidade Grau I`;
+    }else if(resultado > 35 && resultado < 39.99){
+        divResultado.textContent = `Olá ${nome}, seu IMC é de: ${resultado} e você se enquadra em: Obesidade Grau I`;
+    }else if(resultado >= 40){
+        divResultado.textContent = `Olá ${nome}, seu IMC é de: ${resultado} e você se enquadra em: Obesidade Grau I`;
     }
 }
